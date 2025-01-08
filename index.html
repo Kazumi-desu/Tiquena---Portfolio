@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="slideshow.css">
+</head>
+
+<head class="head_content">
+    <nav class="header_nav">
+        <ul class="header_links">
+            <li class="head_link-wrap">
+                <a href="./" class="header_link">HOME</a>
+            </li>
+            <li class="head_link-wrap">
+                <a href="#about" class="header_link">ABOUT ME</a>
+            </li>
+            <li class="head_link-wrap">
+                <a href="#hobbies" class="header_link">PERSONAL INFO</a>
+            </li>
+            <li class="head_link-wrap">
+                <a href="#skills" class="header_link">PROFICIENCY</a>
+            </li>
+            <li class="head_link-wrap">
+                <a href="#gallery" class="header_link">GALLERY</a>
+            </li>
+            <li class="head_link-wrap">
+                <a href="#contact" class="header_link">CONTACT</a>
+            </li>
+        </ul>
+    </nav>
+</head>
+
+
+<section>
+    <div class="start">
+        <div class="info"><h1>Welcome to <br> my Web Portfolio</h1></div>
+    <div class="square">
+        <p class="s1s">Marcus Lorenzo Tiquena</p>
+        <p class="s1s">Newbie Developer</p>
+    </div>
+    <div>
+        <img src="images/Intro.jpg" alt="Photo" class="pic">
+    </div>
+    
+    </div>
+    </section>
+<section>
+    <div class="about">
+        <div class="infoP">ABOUT ME</div>
+        <div class="itext">
+            I'm a College Student Of Columban College.<br>
+            Although aiming to be a Game Developer, this Student<br>
+            has troubles in procrastination.<br>
+            However, that won't stop me if it comes to dedication <br>
+            and motivation.
+        </div>
+        <div>
+            <img src="images/GGEZ.jpg" alt="HEHE" class="pic2">
+        </div>
+    </div>
+</section>
+<section>
+    <div class="hobby">
+        <div class="info2"> MY HOBBIES</div>
+        <div class="hcontainer">
+            <div class="ci1"><img src="images/MK14EBR.jpg" alt="Guns">Gun Related <br></div>
+        <div class="ci2"><img src="images/C&CZH.jpg" alt="RTS">Real Time Strategy <br></div>
+        <div class="ci3"><img src="images/WWDANJIN.jpg" alt="simped">Open World</div></div>
+</div>
+</section>
+<section><div class="skills">
+    <div class="info3">Skills</div>
+    <div class="i3display">
+        <div class="isword">
+            <div class="circle"><span>CSS</span></div>
+            <div class="circle"><span>Photoshop</span></div>
+            <div class="circle"><span>CSS</span></div>
+            <div class="circle"><span>PostgreSQL</span></div>
+            <div class="circle"><span>MongoDB</span></div>
+            <div class="circle"><span>C#</span></div>
+        </div>
+        <div class="pic3">
+            <img src="images/HACKERMAN.jpg" alt="Hackerman">
+        </div>
+    </div>
+</div></section>
+<section>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="images/IRL.jpg" style="height: 85vh;width: 65.5vw;">
+          <div class="text">Hanging out with my Friends</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="images/WUWA2.0.png" style="width:100%">
+          <div class="text">Genshin could Never</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="images/Self-art.jpg" style="height:85vh ;width: 65.5vw;">
+          <div class="text">My Latest Art</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+</section>
+<section>
+    <div class="info4">
+        <div class="footer"> Contact Me</div>
+        <div class="word-container">
+            <div class="word1">
+                <h3>Address</h3>
+                <p>Purok 4 Del Pilar, Dona Lusa St., Castillejos, Zambales</p>
+            </div>
+            <div class="word2">
+                <h3>Email</h3>
+                <p>xxmarcus302004xx@gmail.com</p>
+            </div>
+            <div class="word3">
+                <h3>Phone Number</h3>
+                <p>0976-290-5232</p>
+            </div>
+            <div class="word4">
+                <h3>My Youtube Channel</h3>
+                <p>https://www.youtube.com/@kazumi-desu</p>
+            </div>
+            
+        </div>
+    </div>
+</section>
+</body>
+</html>
