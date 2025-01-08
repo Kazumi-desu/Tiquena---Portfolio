@@ -5,34 +5,6 @@
     scroll-behavior: smooth;
     scroll-padding-top: 20px;
 }
-.head_content{
-    height: 90px;
-    width: 100%;
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 50px;
-    z-index: 1;
-    position: fixed;
-}
-.head_nav{
-    width: 52.5%;
-}
-.header_links{
-    display: flex;
-    list-style-type: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 500;
-    font-size: 20px;
-}
-.header_link{
-    text-decoration: none;
-    letter-spacing: 1px;
-    background-color: white;
-    color: black;
-    padding: 27px 33px 27px 33px;
-}
 .start{
     height: 100vh;
     display: flex;
